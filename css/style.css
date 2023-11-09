@@ -1,0 +1,277 @@
+/* Configuração inciial */
+html, body{height: 100%; background-color: rgb(237, 237, 238) ;}
+
+/*Configuração de classe genérica para todas as divs de conteúdos*/
+.bloco{
+    min-height: 100%;
+    padding-top: 94px;
+}
+
+/*Home - Banner*/
+.home{
+    background-image: url('../img/pexels-rdne-stock-project-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    float: right;
+    text-align: right;
+    margin-top: 80px;
+}
+
+.banner p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: right;
+}
+
+.botoes a{
+    float: right;
+    margin: 5px;
+}
+
+/*COLORS*/
+
+.menu-color{
+    background-color: transparent;
+    color: white;
+}
+
+.menu-color:hover{
+    color: rgb(171, 186, 237);
+}
+
+.menu-color-mobile{
+    background-color: transparent;
+    color: white;
+}
+
+.menu-color-mobile:hover{
+    color: rgb(40, 82, 136);
+}
+
+/*LOGO*/
+
+.logo_text{
+    font-size: 0;
+    margin:0;
+}
+
+.logo-img{
+    width: 90px;
+    margin-top: 20px;
+}
+
+/*MENU*/
+.navbar{
+    background-color: transparent;
+    transition: background 0.5s linear;
+}
+
+.navbar ul a:hover{
+    background-color: transparent;
+}
+
+.nav-color{
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background 0.5s linear;
+}
+
+
+/*Manipulação do CSS Materialize*/
+nav{
+    color: black;
+    background-color: dimgrey;
+    width: 100%;
+    height: 94px;
+    line-height: 94px;
+}
+
+nav.nav-extended .nav-wrapper{
+    min-height: 94px;
+    height: auto;
+}
+
+.navbar-fixed{
+    position: absolute;
+    height: 94px;
+    z-index: 997;
+}
+
+nav i,
+nav [class^="mdi-"], nav[class*="mdi-"],
+nav i.material-icons{
+    display: block;
+    font-size: 24px;
+    height: 94px;
+    line-height: 94px;
+    color: black;
+}
+
+.side-nav{
+    background:url(../img/so-white.png);
+    margin: 0;
+    padding-top: 20px;
+}
+
+/* SOBRE */
+
+.sobre{
+    background-image: url(../img/so-white.png);
+}
+
+.sobre h2{
+    font-size: 2rem;
+    color: #212121;
+    text-transform: uppercase;
+}
+
+.sobre h2::after{
+    content: '';
+    display: block;
+    width: 100px;
+    border-top: 1px solid #386d9f;
+    margin: 15px auto;
+}
+
+.sobre p{
+    line-height: 2rem;
+    text-align: justify;
+}
+
+/* Professores */
+.professores{
+    background-image: url(../img/concrete_seamless.png);
+}
+
+.professores h2{
+    font-size: 2rem;
+    color: #212121;
+    text-transform: uppercase;
+}
+
+.professores h2::after{
+    content: '';
+    display: block;
+    width: 100px;
+    border-top: 1px solid #386d9f;
+    margin: 15px auto;
+}
+
+.title-name{
+    font-size: 1.3rem;
+    color: #212121;
+    text-transform: uppercase;
+}
+
+.bio{
+    margin-top: 2%;
+}
+
+.bio p{
+    line-height: 2rem;
+    text-align: justify;
+}
+
+
+/*---------- CURSOS ------------*/
+.cursos {
+    background-image: url(../img/so-white.png);
+    margin-top: -20px;
+}
+
+.cursos h2 {
+    font-size: 2rem;
+    color: #212121;
+    text-transform: uppercase;
+}
+
+.cursos h2::after{
+    content: '';
+    display: block;
+    width: 100px;
+    border-top: 1px solid #386d9f;
+    margin: 15px auto;
+}
+
+/* CONTATO */
+
+.contato h2 {
+    font-size: 2rem;
+    color: #212121;
+    text-transform: uppercase;
+}
+
+.contato h2::after{
+    content: '';
+    display: block;
+    width: 100px;
+    border-top: 1px solid #386d9f;
+    margin: 15px auto;
+}
+
+.contato .mapa {
+    min-height: 590px;
+}
+
+.contato .mapa iframe {
+    width: 100%;
+    min-height: 590px;
+    border: none;
+}
+
+.contato .informacoes {
+    background-image: url(../img/mochaGrunge.png);
+    min-height: 590px;
+    padding: 30px;
+}
+
+.contato .informacoes h4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.contato .formulario {
+    min-height: 590px;
+    padding: 30px;
+}
+
+.contato .formulario h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* FOOTER */
+
+.rodape {
+    background-color: #1a1f15;
+    background-size: cover;
+    padding: 30px 0;
+    margin-top: -20px;
+}
+
+/*------ MEDIA -------*/
+
+@media only screen and (min-width: 480px){
+    .banner p {padding-top: 200px;}
+    .apoiadores {padding-top: 60px;}
+}
+
+@media only screen and (min-width: 601px){
+    .banner h2{font-size: 3.8rem;}
+    .banner p {padding-top: 200px;}
+    .apoiadores {padding-top: 90px;}
+}
+
+@media only screen and (min-width: 993px){
+    .banner h2{font-size: 4.2rem;}
+    .banner p {padding-top: 200px;}
+    .apoiadores {padding-top: 60px;}
+    .card-image {display: flex; justify-content: center;}
+}
