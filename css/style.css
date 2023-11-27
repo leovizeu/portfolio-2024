@@ -1,5 +1,5 @@
 /* Configuração inciial */
-html, body{height: 100%; background-color: rgb(237, 237, 238) ;}
+html, body{height: 100%; background-color: rgb(237, 237, 238); font-family: 'Montserrat', sans-serif;}
 
 /*Configuração de classe genérica para todas as divs de conteúdos*/
 .bloco{
@@ -8,29 +8,29 @@ html, body{height: 100%; background-color: rgb(237, 237, 238) ;}
 }
 
 /*Home - Banner*/
-.home{
-    background-image: url('../img/pexels-rdne-stock-project-1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.body {
+    background-color: #1a1f15;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .banner h2{
     font-size: 2.5rem;
     font-weight: 900;
-    text-transform: uppercase;
-    float: right;
-    text-align: right;
+    float: center;
+    text-align: left;
     margin-top: 80px;
 }
 
 .banner p{
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    text-align: right;
+    font-size: 60px;
+    line-height: 80px;
+    text-align: left;
 }
 
 .botoes a{
-    float: right;
+    float: left;
     margin: 5px;
 }
 
@@ -38,20 +38,20 @@ html, body{height: 100%; background-color: rgb(237, 237, 238) ;}
 
 .menu-color{
     background-color: transparent;
-    color: white;
+    color: rgb(20, 20, 20);
 }
 
 .menu-color:hover{
-    color: rgb(171, 186, 237);
+    color: rgb(128, 128, 128);
 }
 
 .menu-color-mobile{
     background-color: transparent;
-    color: white;
+    color: rgb(20, 20, 20);
 }
 
 .menu-color-mobile:hover{
-    color: rgb(40, 82, 136);
+    color: rgb(128, 128, 128);
 }
 
 /*LOGO*/
@@ -267,6 +267,7 @@ nav i.material-icons{
     .banner h2{font-size: 3.8rem;}
     .banner p {padding-top: 200px;}
     .apoiadores {padding-top: 90px;}
+    .body {margin-left: 100px; margin-right: 100px;}
 }
 
 @media only screen and (min-width: 993px){
@@ -274,4 +275,5 @@ nav i.material-icons{
     .banner p {padding-top: 200px;}
     .apoiadores {padding-top: 60px;}
     .card-image {display: flex; justify-content: center;}
+    .body {margin-left: 300px; margin-right: 300px;}
 }
