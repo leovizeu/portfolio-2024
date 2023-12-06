@@ -7,6 +7,10 @@ html, body{height: 100%; background-color: rgb(237, 237, 238); font-family: 'Mon
     padding-top: 94px;
 }
 
+a {
+    cursor: pointer;
+}
+
 /*Home - Banner*/
 
 .body {
