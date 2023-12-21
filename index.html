@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/materialize.css">
     <!--Customizado CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Tailwind CSS-->
+    <link href="/dist/output.css" rel="stylesheet">
     <!-- Fav icon-->
     <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
     <!-- Fonte Awesome-->
@@ -31,6 +33,7 @@
             <li><a href="#home" class="menu-color-mobile">Home</a></li>
             <li><a href="#sobre" class="menu-color-mobile">About me</a></li>
             <li><a href="#projetos" class="menu-color-mobile">Projects</a></li>
+            <li><a href="#experience" class="menu-color">Experience</a></li>
             <li><a href="#contato" class="menu-color-mobile">Contact</a></li>
             <li><a class="btn btn-large light-blue darken-2" href="#get">Get in Touch</a></li>
         </ul>
@@ -43,6 +46,7 @@
                         <li><a href="#home" class="menu-color">Home</a></li>
                         <li><a href="#sobre" class="menu-color">About me</a></li>
                         <li><a href="#projetos" class="menu-color">Projects</a></li>
+                        <li><a href="#experience" class="menu-color">Experience</a></li>
                         <li><a href="#contato" class="menu-color">Contact</a></li>
                     </ul>
                     <a href="#" data-activates="menu-mobile" class="button-collapse left"><i class="material-icons">menu</i></a>
@@ -71,7 +75,7 @@
             </div>
         </div>
         <div class="col s12 l6 container center">
-            <h2 class="">You are the Hope!</h2>
+            <h2 class="light">You are the Hope!</h2>
             <p>This project i made for a free Web Design course from FATEC Technology School.
                 The objective of this is to build a full responsive site from scratch using some easy-to-use technologies.</p>
 
@@ -146,36 +150,65 @@
         <br>
     </section>
 
-    <section class="sobre bloco scrollspy">
-        
-
+    <section class="sobre bloco scrollspy" id="experience">
+        <div class="row container">
+            <div class="col s12">
+                <h3 class="light">My Experience</h3>
+            </div>
+            <div class="col s12 l6 container" id="faded">
+            <p class="text-gray light">I started University September 22 and i've been studying since then, taking 
+                free and paid courses to enhance my experience and now feel confident to start 
+                at a company to grow personaly and profissionaly.</p>
+            </div>
+            <div class="col s12" id="work-exp">
+                <div>
+                    <h5>Acetech</h5>
+                    <h5 id="faded">Machine Operator</h5>
+                    <p id="faded-p">OCt 2012 - Dec 2023</p>
+                </div>
+                <div>
+                    <h5>Arcor</h5>
+                    <h5 id="faded">Manofacturing</h5>
+                    <p id="faded-p">Jan 2018 - April 2020</p>
+                </div>
+                <div>
+                    <h5>Vizeu Arts</h5>
+                    <h5 id="faded">Owner</h5>
+                    <p id="faded-p">April 2014 - Dec 2017</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- FORMULÁRIO DE CONTATO -->
     <div class="formulario white black-text center" id="contato">
-        <div class="card">
+        <div class="card" id="card-contact">
             <div class="card-content">
-                <h4>Contact me!</h4>
-                <p class="light">Fill in the fields below so you can contact me.
-                </p>
+                <h4>Want to get in touch?
+                <br>Lets work together!</h4>
+                <p class="light">Fill in the fields below so you can contact me.</p>
 
                 <form action="https://formsubmit.co/leovizeu@hotmail.com" method="POST">
                     <div class="input-field">
+                        <i class="material-icons prefix">account_circle</i>
                         <input type="text" name="name" id="name" required>
                         <label for="name">Your Name</label>
                     </div>
 
                     <div class="input-field">
+                        <i class="material-icons prefix">email</i>
                         <input type="email" name="email" id="email" required>
                         <label for="email">Your E-mail</label>
                     </div>
 
                     <div class="input-field">
+                        <i class="material-icons prefix">insert_drive_file</i>
                         <input type="text" name="assunto" id="assunto">
                         <label for="assunto">Subject</label>
                     </div>
 
                     <div class="input-field">
+                        <i class="material-icons prefix">comment</i>
                         <textarea id="message" class="materialize-textarea"></textarea>
                         <label for="message">Message</label>
                     </div>
@@ -189,16 +222,16 @@
         </div>
         
     </div>
-</div>
-</section>
+
+
+<nav>
+    <div class="center">
+        <box-icon name='up-arrow' type='solid' color='#f3eded'></box-icon>
+        <a href="#home">Back to Top</a>
+    </div>   
+</nav>
 
 <!-- FOOTER -->
-<nav>
-<div class="center">
-<box-icon name='up-arrow' type='solid' color='#f3eded'></box-icon>
-<a href="#home">Back to Top</a>
-</div>   
-</nav>
 
 <footer class="rodape">
 <div class="row container center">

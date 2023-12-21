@@ -1,7 +1,12 @@
 /* Configuração inciial */
 html, body{height: 100%; background-color: rgb(237, 237, 238); font-family: 'Montserrat', sans-serif;}
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /*Configuração de classe genérica para todas as divs de conteúdos*/
+
 .bloco{
     min-height: 100%;
     padding-top: 94px;
@@ -9,6 +14,27 @@ html, body{height: 100%; background-color: rgb(237, 237, 238); font-family: 'Mon
 
 a {
     cursor: pointer;
+}
+
+#faded{
+    font-size: 28px;
+    opacity: 60%;
+}
+
+#faded-p{
+    opacity: 60%;
+}
+
+#work-exp{
+    display: flex;
+    gap: 30px;
+}
+
+#card-contact{
+    margin-left: 330px;
+    margin-right: 330px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 /*Home - Banner*/
