@@ -26,13 +26,6 @@ a {
     gap: 30px;
 }
 
-#card-contact{
-    margin-left: 330px;
-    margin-right: 330px;
-    padding-left: 80px;
-    padding-right: 80px;
-}
-
 /*Home - Banner*/
 
 .body {
@@ -169,41 +162,6 @@ nav i.material-icons{
     text-align: justify-cpntent;
 }
 
-/* Professores */
-.professores{
-    background-image: url(../img/concrete_seamless.png);
-}
-
-.professores h2{
-    font-size: 2rem;
-    color: #212121;
-    text-transform: uppercase;
-}
-
-.professores h2::after{
-    content: '';
-    display: block;
-    width: 100px;
-    border-top: 1px solid #386d9f;
-    margin: 15px auto;
-}
-
-.title-name{
-    font-size: 1.3rem;
-    color: #212121;
-    text-transform: uppercase;
-}
-
-.bio{
-    margin-top: 2%;
-}
-
-.bio p{
-    line-height: 2rem;
-    text-align: justify;
-}
-
-
 /*---------- CURSOS ------------*/
 .cursos {
     background-image: url(../img/so-white.png);
@@ -289,11 +247,16 @@ nav i.material-icons{
     .apoiadores {padding-top: 60px;}
 }
 
+@media only screen and (max-width: 480px){
+    #work-exp {display: block;}
+}
+
 @media only screen and (min-width: 601px){
     .banner h2{font-size: 3.8rem;}
     .banner p {padding-top: 200px;}
     .apoiadores {padding-top: 90px;}
     .body {margin-left: 100px; margin-right: 100px;}
+    #card-contact {padding-left: 80px; padding-right: 80px;}
 }
 
 @media only screen and (min-width: 993px){
@@ -302,4 +265,14 @@ nav i.material-icons{
     .apoiadores {padding-top: 60px;}
     .card-image {display: flex; justify-content: center;}
     .body {margin-left: 300px; margin-right: 300px;}
+    #card-contact {padding-left: 80px; padding-right: 80px;}
+}
+
+@media only screen and (min-width:1242px){
+    #card-contact {
+        margin-left: 330px;
+        margin-right: 330px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
 }
