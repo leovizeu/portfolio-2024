@@ -46,9 +46,7 @@
                         <li><a href="#projetos" class="menu-color">Projects</a></li>
                         <li><a href="#experience" class="menu-color">Experience</a></li>
                         <li><a href="#contato" class="menu-color">Contact</a></li>
-                        <li>
-                        <a class="btn-floating pulse grey darken-1" data-target='dropdown'><i class="material-icons">assignment</i></a>
-                        </li>
+                        </ul>
                         
                     </ul>
                     <a href="#" data-activates="menu-mobile" class="button-collapse left"><i class="material-icons">menu</i></a>
@@ -398,6 +396,12 @@
         //ESCONDER MENU AO CLICAR
         $(".hide-menu").click(function(){
             $(".button-collapse").sideNav("hide");
+        });
+
+        //DROPDOWN
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems, options);
         });
     </script>
 </body>
