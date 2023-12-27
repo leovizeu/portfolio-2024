@@ -46,6 +46,8 @@
                         <li><a href="#projetos" class="menu-color">Projects</a></li>
                         <li><a href="#experience" class="menu-color">Experience</a></li>
                         <li><a href="#contato" class="menu-color">Contact</a></li>
+                        </ul>
+                        
                     </ul>
                     <a href="#" data-activates="menu-mobile" class="button-collapse left"><i class="material-icons">menu</i></a>
                 </div>
@@ -275,7 +277,7 @@
                 <h3 class="light">My Experience</h3>
             </div>
             <div class="col s12 l6 container" id="faded">
-            <p class="text-gray light">I started University September 22 and i've been studying since then, taking 
+            <p class="text-gray light">I started University September 2022 and i've been studying since then, taking 
                 free and paid courses to enhance my experience and now feel confident to start 
                 at a company to grow personaly and profissionaly.</p>
             </div>
@@ -399,6 +401,12 @@
         //ESCONDER MENU AO CLICAR
         $(".hide-menu").click(function(){
             $(".button-collapse").sideNav("hide");
+        });
+
+        //DROPDOWN
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems, options);
         });
     </script>
 </body>
