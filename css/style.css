@@ -12,6 +12,11 @@ a {
     cursor: pointer;
 }
 
+#tech{
+    position: absolute;
+    position: fixed;
+}
+
 #faded{
     font-size: 28px;
     opacity: 60%;
