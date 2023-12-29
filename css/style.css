@@ -273,6 +273,10 @@ nav i.material-icons{
     #card-contact {padding-left: 80px; padding-right: 80px;}
 }
 
+@media only screen and (max-width: 993px){
+    #card-exp {visibility: hidden;}
+}
+
 @media only screen and (min-width:1242px){
     #card-contact {
         margin-left: 330px;

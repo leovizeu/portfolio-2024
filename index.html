@@ -27,15 +27,45 @@
 <body>
     <!-- HEADER -->
     <header>
-        <!-- Menu Mobile-->
+        <!-- Menu Mobile -->
         <ul class="side-nav" id="menu-mobile">
             <li><a href="#home" class="menu-color-mobile">Home</a></li>
             <li><a href="#sobre" class="menu-color-mobile">About me</a></li>
             <li><a href="#projetos" class="menu-color-mobile">Projects</a></li>
             <li><a href="#experience" class="menu-color">Experience</a></li>
-            <li><a href="#contato" class="menu-color-mobile">Contact</a></li>
-            <li><a class="btn btn-large light-blue darken-2" href="#get">Get in Touch</a></li>
+            <!-- TECHNOLOGIES MOBILE -->
+            <ul class="collapsible" id="menu-mobile">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">assignment</i>Skills</div>
+                    <div class="collapsible-body"><span>
+                        <div class="skills">
+                            <label for="html">HTML</label>
+                            <meter id="html" value="100" min="0" max="100"></meter><br>
+                            <label for="css">CSS</label>
+                            <meter id="css" value="80" min="0" max="100"></meter><br>
+                            <label for="javascript">Javascript</label>
+                            <meter id="javascript" value="50" min="0" max="100"></meter><br>
+                            <label for="java">Java</label>
+                            <meter id="java" value="70" min="0" max="100"></meter><br>
+                            <label for=spring">Spring</label>
+                            <meter id="spring" value="30" min="0" max="100"></meter><br>
+                            <label for="react">React</label>
+                            <meter id="react" value="20" min="0" max="100"></meter><br>
+                            <label for="sql">mySQL/Oracle</label>
+                            <meter id="sql" value="50" min="0" max="100"></meter><br>
+                            <label for="git">Git</label>
+                            <meter id="git" value="100" min="0" max="100"></meter><br>
+                            <label for="angular">Angular</label>
+                            <meter id="angular" value="50" min="0" max="100"></meter><br>
+                            <label for="portman">Postman</label>
+                            <meter id="postman" value="40" min="0" max="100"></meter><br>
+                        </div>
+                    </span></div>
+                </li>
+            </ul>
+            <li><a class="btn btn-large light-blue darken-2" href="#contato">Get in Touch</a></li>
         </ul>
+
         <!-- Menu Desktop-->
         <div class="navbar-fixed" id="home">
             <nav class="navbar z-depth-0 width-fitcontent  col l8">
@@ -53,6 +83,7 @@
             </nav>
         </div>
     </header>
+    </section>
 
         <!-- TECHNOLOGIES-->
         <section class="bloco row" id="tech">
@@ -79,8 +110,24 @@
                         <meter id="spring" value="30" min="0" max="100"></meter>
                     </div>
                     <div class="skills">
-                        <label for="html">HTML/CSS/JS</label>
-                        <meter id="html" value="80" min="0" max="100"></meter>
+                        <label for="react">React</label>
+                        <meter id="react" value="20" min="0" max="100"></meter>
+                    </div>
+                    <div class="skills">
+                        <label for="sql">mySQL/Oracle</label>
+                        <meter id="sql" value="50" min="0" max="100"></meter>
+                    </div>
+                    <div class="skills">
+                        <label for="git">Git</label>
+                        <meter id="git" value="100" min="0" max="100"></meter>
+                    </div>
+                    <div class="skills">
+                        <label for="angular">Angular</label>
+                        <meter id="angular" value="50" min="0" max="100"></meter>
+                    </div>
+                    <div class="skills">
+                        <label for="portman">Postman</label>
+                        <meter id="postman" value="40" min="0" max="100"></meter>
                     </div>
                 </div>
             </div>
@@ -394,7 +441,6 @@
     </p>
 </div>
 </footer>
-    <script src="js/script.js"></script>
     <!-- Jquery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
@@ -433,6 +479,12 @@
         document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.dropdown-trigger');
         var instances = M.Dropdown.init(elems, options);
+        });
+
+        //COLLAPSIBLE
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems, options);
         });
     </script>
 </body>
