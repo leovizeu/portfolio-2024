@@ -12,6 +12,10 @@ a {
     cursor: pointer;
 }
 
+p {
+    line-height: 2rem;
+}
+
 #tech{
     position: absolute;
     position: fixed;
@@ -62,20 +66,20 @@ a {
 
 .menu-color{
     background-color: transparent;
-    color: rgb(20, 20, 20);
+    color: rgb(10, 10, 10);
 }
 
 .menu-color:hover{
-    color: rgb(128, 128, 128);
+    color: rgb(255, 255, 255);
 }
 
 .menu-color-mobile{
     background-color: transparent;
-    color: rgb(20, 20, 20);
+    color: rgb(10, 10, 10);
 }
 
 .menu-color-mobile:hover{
-    color: rgb(128, 128, 128);
+    color: rgb(252, 252, 252);
 }
 
 /*LOGO*/
@@ -101,7 +105,7 @@ a {
 }
 
 .nav-color{
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(32, 32, 32, 0.808);
     transition: background 0.5s linear;
 }
 
