@@ -38,10 +38,11 @@ p {
 /*Home - Banner*/
 
 .trace {
-    width: 15px;
-    height: 80px;
-    border-radius: 50%;
-    color: chocolate;
+    width: 35rem;
+    height: 5px;
+    border-radius: 10px;
+    margin-top: -25px;
+    background-color: chocolate;
 }
 
 .body {
