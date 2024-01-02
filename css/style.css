@@ -262,10 +262,12 @@ nav i.material-icons{
 @media only screen and (min-width: 480px){
     .banner p {padding-top: 200px;}
     .apoiadores {padding-top: 60px;}
+    .trace {width: 22rem;}
 }
 
 @media only screen and (max-width: 480px){
     #work-exp {display: block;}
+    .trace {width: 22rem;}
 }
 
 @media only screen and (min-width: 601px){
@@ -274,6 +276,7 @@ nav i.material-icons{
     .apoiadores {padding-top: 90px;}
     .body {margin-left: 100px; margin-right: 100px;}
     #card-contact {padding-left: 80px; padding-right: 80px;}
+    .trace {width: 36rem;}
 }
 
 @media only screen and (min-width: 993px){
