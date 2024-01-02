@@ -37,6 +37,13 @@ p {
 
 /*Home - Banner*/
 
+.trace {
+    width: 15px;
+    height: 80px;
+    border-radius: 50%;
+    color: chocolate;
+}
+
 .body {
     background-color: #1a1f15;
     margin-left: 10px;
